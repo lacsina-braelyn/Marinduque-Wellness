@@ -1,0 +1,194 @@
+
+/* TASK #4: FEW-SHOT AND ROLE ASSIGNMENT */
+
+.experiment-card {
+  padding: 28px;
+  margin: 24px 0;
+  border: 1px solid #dfe8e1;
+  border-radius: 18px;
+  background: #fff;
+}
+
+.experiment-card > p:not(.eyebrow):not(.checklist-message) {
+  color: #5d716c;
+}
+
+.experiment-card h3 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+}
+
+.experiment-card h4 {
+  margin: 26px 0 10px;
+  font-size: 1rem;
+  color: #183b36;
+}
+
+.example-box {
+  padding: 16px;
+  margin: 12px 0;
+  border-left: 3px solid #39836a;
+  border-radius: 5px;
+  background: #edf4ee;
+  font-size: 0.9rem;
+  line-height: 1.9;
+}
+
+.experiment-card .prompt-text {
+  margin: 12px 0 16px;
+  overflow-wrap: anywhere;
+}
+
+.experiment-card .copy-button {
+  margin: 0 0 8px;
+}
+
+.copy-button:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+.result-instruction {
+  font-size: 0.9rem;
+}
+
+.generated-list {
+  margin-top: 18px;
+  padding: 8px 20px;
+  border: 1px solid #dfe8e1;
+  border-radius: 14px;
+  background: #fbfcfa;
+}
+
+.generated-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  padding: 17px 0;
+  border-bottom: 1px solid #e6eee7;
+  cursor: pointer;
+}
+
+.generated-item:last-child {
+  border-bottom: none;
+}
+
+.generated-item input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
+.generated-check {
+  flex: 0 0 23px;
+  width: 23px;
+  height: 23px;
+  margin-top: 2px;
+  display: grid;
+  place-items: center;
+  border: 1.5px solid #b8c9bc;
+  border-radius: 7px;
+  color: white;
+}
+
+.generated-item input:checked + .generated-check {
+  background: #286a58;
+  border-color: #286a58;
+}
+
+.generated-item input:checked + .generated-check::after {
+  content: "✓";
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.generated-item input:focus-visible + .generated-check {
+  outline: 3px solid #86b9a0;
+  outline-offset: 3px;
+}
+
+.generated-item strong,
+.generated-item small,
+.category-label {
+  display: block;
+}
+
+.generated-item strong {
+  margin-bottom: 4px;
+  font-size: 0.92rem;
+}
+
+.generated-item small {
+  margin-top: 5px;
+  color: #718078;
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+.category-label {
+  width: fit-content;
+  margin-top: 4px;
+  padding: 3px 8px;
+  border-radius: 20px;
+  background: #e5f3eb;
+  color: #286a58;
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.generated-item input:checked ~ span:last-child strong {
+  color: #718078;
+  text-decoration: line-through;
+}
+
+#few-shot-progress {
+  margin: 14px 0 0;
+  color: #286a58;
+  font-size: 0.85rem;
+}
+
+.field-label {
+  display: block;
+  margin: 14px 0 8px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.experiment-card textarea {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 12px;
+  border: 1px solid #cbdacf;
+  border-radius: 8px;
+  background: #fbfcfa;
+  color: #183b36;
+  font: inherit;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  resize: vertical;
+}
+
+.experiment-card textarea:focus-visible {
+  outline: 3px solid #86b9a0;
+  outline-offset: 2px;
+}
+
+.role-experiment {
+  background: #fbfcfa;
+}
+
+@media (max-width: 760px) {
+  .experiment-card {
+    padding: 18px;
+  }
+
+  .generated-list {
+    padding: 5px 14px;
+  }
+
+  .experiment-card h3 {
+    font-size: 1.35rem;
+  }
+}

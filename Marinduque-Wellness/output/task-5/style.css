@@ -1,0 +1,70 @@
+
+/* TASKS #5 AND #6: ANALYSIS, VERIFICATION, AND COMPARISON */
+
+.verification-list {
+  margin: 18px 0 24px;
+  padding: 16px 20px;
+  border: 1px solid #dfe8e1;
+  border-radius: 12px;
+  background: #f5f8f4;
+}
+
+.verification-list .test-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #e1eae2;
+  line-height: 1.5;
+}
+
+.verification-list .test-item:last-child {
+  border-bottom: none;
+}
+
+.verification-list .test-item input {
+  flex: 0 0 auto;
+  width: 16px;
+  height: 16px;
+  accent-color: #286a58;
+}
+
+#task-5 .task-note,
+#task-6 .task-note {
+  margin-top: 20px;
+}
+
+#task-6 .comparison-table td {
+  min-width: 220px;
+}
+
+#task-6 .comparison-table td textarea {
+  width: 100%;
+  min-width: 190px;
+  display: block;
+  font-family: inherit;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+#task-6 ul {
+  padding-left: 22px;
+  color: #5d716c;
+}
+
+#task-6 li {
+  padding: 4px 0;
+}
+
+.task-section textarea {
+  box-sizing: border-box;
+}
+
+@media (max-width: 760px) {
+  #task-5 .experiment-card,
+  #task-6 .experiment-card {
+    padding: 18px;
+  }
+
+  #task-6 .comparison-table th,
+  #task-6 .comparison-table td {
+    padding: 10px;
+  }
+}

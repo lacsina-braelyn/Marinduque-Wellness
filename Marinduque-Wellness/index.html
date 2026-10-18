@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A community-focused health and wellness guide for Marinduque.">
+  <title>Marinduque Wellness | Health & Wellness Innovation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Marinduque Wellness home">
+      <span class="brand-mark" aria-hidden="true">✦</span>
+      <span>Marinduque <strong>Wellness</strong></span>
+    </a>
+    <nav aria-label="Main navigation">
+      <a href="#wellness">Wellness Guide</a>
+      <a href="#checklist">Daily Checklist</a>
+      <a href="#support">Find Support</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">HEALTH & WELLNESS INNOVATION</p>
+        <h1>A healthier community starts with <span>small steps.</span></h1>
+        <p class="hero-text">A simple wellness guide for the people of Marinduque. Explore everyday habits that support physical, mental, and community well-being.</p>
+        <a class="button" href="#wellness">Explore the guide <span aria-hidden="true">→</span></a>
+        <p class="demo-note">Educational information only — not a medical diagnosis or treatment.</p>
+      </div>
+      <div class="hero-art" aria-label="Decorative illustration of a peaceful island landscape" role="img">
+        <div class="sun"></div><div class="hill hill-back"></div><div class="hill hill-front"></div>
+        <div class="wave wave-one"></div><div class="wave wave-two"></div>
+        <div class="art-label"><span>♡</span><div><strong>Well-being for all</strong><small>Mind · Body · Community</small></div></div>
+      </div>
+    </section>
+
+    <section class="intro section-wrap" id="wellness">
+      <div>
+        <p class="eyebrow">YOUR WELLNESS, YOUR PACE</p>
+        <h2>Build healthy habits, one day at a time.</h2>
+      </div>
+      <p class="section-intro">Health information can feel confusing or hard to find. This community prototype brings basic wellness reminders and a personal checklist together in one easy-to-use page.</p>
+    </section>
+
+    <section class="feature-grid section-wrap" aria-label="Wellness topics">
+      <article class="feature-card mint">
+        <div class="feature-icon" aria-hidden="true">☀</div>
+        <p class="card-tag">01 / BODY</p>
+        <h3>Care for your body</h3>
+        <p>Drink safe water, eat balanced meals, get enough rest, and choose physical activities that suit your ability.</p>
+      </article>
+      <article class="feature-card peach">
+        <div class="feature-icon" aria-hidden="true">♡</div>
+        <p class="card-tag">02 / MIND</p>
+        <h3>Make space to rest</h3>
+        <p>Take short breaks, breathe slowly, enjoy a hobby, and talk with someone you trust when you need support.</p>
+      </article>
+      <article class="feature-card lavender">
+        <div class="feature-icon" aria-hidden="true">⌂</div>
+        <p class="card-tag">03 / COMMUNITY</p>
+        <h3>Stay connected</h3>
+        <p>Check in on family and neighbors, share reliable information, and help make wellness resources easier to access.</p>
+      </article>
+    </section>
+
+    <section class="checklist-section" id="checklist">
+      <div class="section-wrap checklist-layout">
+        <div class="checklist-copy">
+          <p class="eyebrow">A LITTLE PROGRESS COUNTS</p>
+          <h2>Your daily wellness checklist</h2>
+          <p>Tick the habits you have completed today. Your progress updates as you go.</p>
+          <div class="progress-block">
+            <div class="progress-heading"><span>Today's progress</span><strong id="progress-text">0 of 6</strong></div>
+            <div class="progress-track" role="progressbar" aria-label="Daily wellness checklist progress" aria-valuemin="0" aria-valuemax="6" aria-valuenow="0" id="progress-bar"><span id="progress-fill"></span></div>
+          </div>
+          <button class="reset-button" id="reset-checklist" type="button">Reset checklist</button>
+        </div>
+        <div class="checklist-card">
+          <label class="check-item"><input type="checkbox"><span class="custom-check" aria-hidden="true"></span><span><strong>Drink water regularly</strong><small>Choose safe drinking water throughout the day.</small></span></label>
+          <label class="check-item"><input type="checkbox"><span class="custom-check" aria-hidden="true"></span><span><strong>Eat a balanced meal</strong><small>Include a variety of nutritious foods when available.</small></span></label>
+          <label class="check-item"><input type="checkbox"><span class="custom-check" aria-hidden="true"></span><span><strong>Move your body</strong><small>Try walking, stretching, or another activity you enjoy.</small></span></label>
+          <label class="check-item"><input type="checkbox"><span class="custom-check" aria-hidden="true"></span><span><strong>Take a mindful break</strong><small>Pause, breathe, or spend a quiet moment outdoors.</small></span></label>
+          <label class="check-item"><input type="checkbox"><span class="custom-check" aria-hidden="true"></span><span><strong>Make time to rest</strong><small>Give yourself time to relax and maintain a sleep routine.</small></span></label>
+          <label class="check-item"><input type="checkbox"><span class="custom-check" aria-hidden="true"></span><span><strong>Connect with someone</strong><small>Talk with a friend, family member, or trusted person.</small></span></label>
+          <p class="checklist-message" id="checklist-message" aria-live="polite">Start with one small step. Every habit counts.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="support-section section-wrap" id="support">
+      <div class="support-main">
+        <p class="eyebrow">WHEN YOU NEED HELP</p>
+        <h2>It's okay to ask for support.</h2>
+        <p>For a health concern, contact a qualified health professional or your local health center. For urgent or life-threatening emergencies, contact local emergency services.</p>
+      </div>
+      <aside class="support-note">
+        <span class="support-symbol" aria-hidden="true">＋</span>
+        <h3>Use trusted information</h3>
+        <p>This prototype does not provide live clinic listings, emergency alerts, or personalized medical advice. Confirm service details with official local sources.</p>
+      </aside>
+    </section>
+
+    <section class="bottom-banner section-wrap">
+      <p class="eyebrow">MARINDUQUE WELLNESS</p>
+      <h2>Small habits. Stronger communities.</h2>
+      <p>Start where you are, and take the next healthy step.</p>
+    </section>
+  </main>
+
+  <footer>
+    <span>© 2026 Marinduque Wellness — Student Prototype</span>
+    <span>Health & Wellness Innovation</span>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
